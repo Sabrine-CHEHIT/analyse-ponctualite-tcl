@@ -1,22 +1,22 @@
 # analyse-ponctualite-tcl
 Analyse de la ponctualité des transports lyonnais - Projet Data Analytics SQL
 
-# 🚇 Analyse de la ponctualité des transports lyonnais (TCL)
+#  Analyse de la ponctualité des transports lyonnais (TCL)
 
-## 📌 Contexte du projet
+##  Contexte du projet
 
 - Modéliser une problématique métier (la ponctualité des transports)
 - Manipuler des données avec **SQL** (PostgreSQL)
 - Visualiser des résultats avec **Python** (Matplotlib)
 
-## 🎯 Problématique
+##  Problématique
 
 **Identifier les lignes et les heures de la journée où les retards sont les plus critiques.**
 
 ### Règle métier
 Un voyageur est considéré **à l'heure** si son retard est **inférieur à 5 minutes (300 secondes)**.
 
-## 🛠️ Stack technique
+##  Stack technique
 
 | Outil | Usage |
 |-------|-------|
@@ -24,13 +24,13 @@ Un voyageur est considéré **à l'heure** si son retard est **inférieur à 5 m
 | **Python (pandas)** | Génération des données et exports |
 | **Matplotlib** | Dashboard de visualisation |
 
-## 📊 Résultats clés
+##  Résultats clés
 
 | Enseignement | Valeur |
 |--------------|--------|
-| 🔴 Ligne la moins ponctuelle | **Ligne B** (15% à l'heure aux heures de pointe) |
-| ⏰ Heure la plus critique | **8h et 18h** |
-| 🏆 Ligne la plus performante | **Ligne C** (100% à 12h) |
+|  Ligne la moins ponctuelle | **Ligne B** (15% à l'heure aux heures de pointe) |
+|  Heure la plus critique | **8h et 18h** |
+|  Ligne la plus performante | **Ligne C** (100% à 12h) |
 
 ### Détail par ligne et par heure
 
@@ -40,11 +40,11 @@ Un voyageur est considéré **à l'heure** si son retard est **inférieur à 5 m
 | **B** | 15% | - | 15% |
 | **C** | 90% | 100% | 90% |
 
-## 📈 Dashboard
+##  Dashboard
 
 ![Dashboard ponctualité](./dashboard_ponctualite.png)
 
-## 🔍 Extrait SQL (requête principale)
+##  Extrait SQL (requête principale)
 
 ```sql
 WITH analyse_ponctualite AS (
